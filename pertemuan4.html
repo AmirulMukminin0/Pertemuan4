@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Client Side-Statice 3 (Form)</title>
+    <style>
+      body {
+        background-color: #04293A;
+      }
+        
+    </style>
+</head>
+<body>
+    <header class="py-1">
+        <div class="container-fluid px-4 px-lg-4 my-2">
+          <div class="text-center text-white">
+            <h1 class="display-5 fw-border fs-3">Nonton Film Horror Indonesia Favorit</h1>
+            <h6>Tonton Film Horror Favoritmu Hanya Disini!!</h6>
+          </div>
+        </div>
+      </header>
+    
+        <div class="container mt-4 shadow-lg p-3 mb-5 rounded" style="color: black; background-color: white;">
+            <form>
+                <div class="row mb-3" style="color: black;">
+                    <p class="fw-bold fs-4"><i class="fa fa-edit fa-lg"></i> Perbarui Film yang Ada</p>
+                    
+                </div>
+                <div class="form-group row">
+                    <label for="formFile" class="col-sm-2 col-form-label">Tumbnail</label>
+                    <div class="col-sm-10">   
+                        <input class="form-control" type="file" id="formFile" >
+                    </div>
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Judul*</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Masukkan Judul">              
+                    </div>
+                </div>
+
+                <div class="form-group row mt-3">
+                    <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Deskripsi</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>    
+
+                <div class="form-group row mt-3">
+                    <label for="formGroupExampleInput" class="col-sm-2 col-form-label">Tahun Rilis</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Masukkan Tahun Rilis">
+                    </div>
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="language" class="col-sm-2 col-form-label">Bahasa*</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pilih Bahasa</option>
+                            <option value="1">Inggris</option>
+                            <option value="2">Indonesia</option>
+                            <option value="3">Jerman</option>
+                        </select>
+                    </div>
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="original language" class="col-sm-2 col-form-label">Bahasa Asli</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pilih Bahasa</option>
+                            <option value="1">Inggris</option>
+                            <option value="2">Indonesia</option>
+                            <option value="3">Jerman</option>
+                        </select>
+                    </div>
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="rental duration" class="col-sm-2 col-form-label">Durasi Sewa</label>      
+                    <div class="col-sm-10">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="-" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">Hari</span>
+                        </div>
+                    </div>  
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="Rental rate" class="col-sm-2 col-form-label">Tarif Sewa* </label>   
+                    <div class="col-sm-10">
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="0,00"> 
+                        </div>   
+                    </div> 
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="Length" class="col-sm-2 col-form-label">Panjang</label>  
+                    <div class="col-sm-10">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="-" aria-label="Recipient's username" aria-describedby="basic-addon2" placeholder="Masukkan Durasi">
+                            <span class="input-group-text" id="basic-addon2">Menit</span> 
+                        </div>
+                    </div>       
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="replamancent cost" class="col-sm-2 col-form-label">Biaya Penggantian* </label>  
+                    <div class="col-sm-10">
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="0,00"> 
+                        </div>
+                    </div>       
+                </div>
+                        
+                <div class="form-group row mt-3">
+                    <label for="rating" class="col-sm-2 col-form-label">Peringkat*</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pilih Peringkat</option>
+                            <option value="1">Sangat Puas</option>
+                            <option value="2">Puas</option>
+                            <option value="3">Biasa aja</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group row mt-3">
+                    <label for="rating" class="col-sm-2 col-form-label">Biaya penggantian</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" multiple aria-label="multiple select example">
+                            <option value="1">Trailer</option>
+                            <option value="2">Komentar</option>
+                            <option value="3">Adegan Yang Dihapus</option>
+                            <option value="4">Di Balik Layar</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex py-4">
+                    <button class="btn" type="button"><i class="fa-solid fa-paper-plane"></i> Kirimkan</button>
+                    <button class="btnn" type="button"><i class="fa-solid fa-circle-arrow-left"></i> Kembali</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="text-center p-3 mt-3" style="color: rgb(255, 255, 255);">
+            Muhammad Amirul Mukminin (2024101011118)
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aac75e06ba.js" crossorigin="anonymous"></script>
+</body>
+</html>
